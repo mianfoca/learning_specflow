@@ -1,4 +1,4 @@
-﻿Feature: Calculator_Table
+﻿Feature: Lesson02
 	In order to avoid silly mistakes
 	As a math idiot
 	I want to be told the sum of three numbers
