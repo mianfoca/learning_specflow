@@ -64,6 +64,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lesson01.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\Lesson02.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lesson02.feature</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\Lesson01.cs" />
@@ -73,6 +78,10 @@
     <None Include="Features\Lesson01.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Lesson01.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Lesson02.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Lesson02.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
