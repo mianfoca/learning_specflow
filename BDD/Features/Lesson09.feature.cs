@@ -18,20 +18,20 @@ namespace BDD.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Lesson06")]
-    public partial class Lesson06Feature
+    [NUnit.Framework.DescriptionAttribute("Lesson09")]
+    public partial class Lesson09Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Lesson06.feature"
+#line 1 "Lesson09.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Lesson06", "\tSimple feature to demonstrate customer Login feature", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Lesson09", "\tTesting the multiline step resusablity", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,39 +64,47 @@ namespace BDD.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login for customer portal")]
-        [NUnit.Framework.CategoryAttribute("customer")]
-        public virtual void LoginForCustomerPortal()
+        [NUnit.Framework.DescriptionAttribute("Enter user details in userform")]
+        public virtual void EnterUserDetailsInUserform()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login for customer portal", new string[] {
-                        "customer"});
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Enter user details in userform", ((string[])(null)));
+#line 4
 this.ScenarioSetup(scenarioInfo);
-#line 6
- testRunner.Given("I have opened the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 7
- testRunner.And("I login to application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "UserName",
+                        "Password"});
+            table1.AddRow(new string[] {
+                        "admin",
+                        "admin"});
+#line 5
+ testRunner.Given("I login to application", ((string)(null)), table1, "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Title",
+                        "Initial",
+                        "FirstName"});
+            table2.AddRow(new string[] {
+                        "Mr.",
+                        "K",
+                        "Karthik"});
 #line 8
- testRunner.Then("I see customer portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I enter following details", ((string)(null)), table2, "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Login for user portal")]
-        [NUnit.Framework.CategoryAttribute("user")]
-        public virtual void LoginForUserPortal()
+        [NUnit.Framework.DescriptionAttribute("Enter user details in UserForm in 2 lines")]
+        public virtual void EnterUserDetailsInUserFormIn2Lines()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login for user portal", new string[] {
-                        "user"});
-#line 11
-this.ScenarioSetup(scenarioInfo);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Enter user details in UserForm in 2 lines", ((string[])(null)));
 #line 12
- testRunner.Given("I have opened the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 13
- testRunner.And("I login to application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I login and enter user details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.Then("I see user portal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I click save button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

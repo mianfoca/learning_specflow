@@ -1,4 +1,4 @@
-﻿Feature: Lesson06_1
+﻿Feature: Lesson06
 	Simple feature to demonstrate customer Login feature
 
 @customer 
