@@ -27,10 +27,10 @@ namespace BDD.Hooks
             Console.WriteLine("Calling after My Scenario");
         }
 
-        [AfterScenario]
-        public void AfterAllScenario()
-        {
-            Console.WriteLine("Calling after All Scenario");
-        }
+        //[AfterScenario]
+        //public void AfterAllScenario()
+        //{
+        //    Console.WriteLine("Calling after All Scenario");
+        //}
     }
 }
