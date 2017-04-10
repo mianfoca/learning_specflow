@@ -114,6 +114,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Lesson11.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\Lesson12.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lesson12.feature</DependentUpon>
+    </Compile>
     <Compile Include="Helper\CustomStepArgumentTransformation.cs" />
     <Compile Include="Hooks\GeneralHook.cs" />
     <Compile Include="Hooks\TestFixture.cs" />
@@ -127,6 +132,7 @@
     <Compile Include="Steps\Lesson08.cs" />
     <Compile Include="Steps\Lesson09.cs" />
     <Compile Include="Steps\Lesson10.cs" />
+    <Compile Include="Steps\Lesson12.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -173,6 +179,10 @@
     <None Include="Features\Lesson11.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Lesson11.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\Lesson12.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Lesson12.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
